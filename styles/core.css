@@ -56,7 +56,12 @@ header a {
 body {
 	margin: 0;
 	background-color: #f2f2f2;
-	overflow-x: hidden;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1;
 }
 #logo {
 	grid-area: logo;
@@ -272,38 +277,38 @@ footer {
 	.hamburgerout {
 		display: none;
 	}
-	/* Larger phonescreens */
-	@media only screen and (max-width: 600px) {
-		.banner {
-			font-size: 25px;
-			line-height: normal;
-		}
-		h1.banner {
-			margin-top: 20px;
-		}
-		.hamburger i {
-			font-size: 40px;
-		}
-		header {
-			grid-gap: 5px;
-		}
-		.secondhead {
-			white-space: normal;
-		}
-		svg {
-			width: 80px;
-		}
+}
+/* Larger phonescreens */
+@media only screen and (max-width: 600px) {
+	.banner {
+		font-size: 25px;
+		line-height: normal;
 	}
-	/* 340px wide screens */
-	@media only screen and (max-width: 400px) {
-		.hamburgerout {
-			text-align: left;
-		}
-		.hamburgerout li {
-			padding-left: 10px;
-		}
-		svg {
-			padding-left: 1px;
-		}
+	h1.banner {
+		margin-top: 20px;
+	}
+	.hamburger i {
+		font-size: 40px;
+	}
+	header {
+		grid-gap: 5px;
+	}
+	.secondhead {
+		white-space: normal;
+	}
+	svg {
+		width: 80px;
+	}
+}
+/* 340px wide screens */
+@media only screen and (max-width: 400px) {
+	.hamburgerout {
+		text-align: left;
+	}
+	.hamburgerout li {
+		padding-left: 10px;
+	}
+	svg {
+		padding-left: 1px;
 	}
 }
