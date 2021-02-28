@@ -1,5 +1,5 @@
 main {
-	margin: 1% 12% 0% 12%;
+	margin: 1% 8% 0% 12%;
 }
 .aigrid {
 	display: grid;
@@ -52,7 +52,7 @@ main {
 	margin-right: auto;
 	display: block;
 }
-@media only screen and (max-width: 1396px) {
+@media only screen and (max-width: 796px) {
 	main {
 		margin: 15px;
 	}
@@ -60,11 +60,26 @@ main {
 @media only screen and (max-width: 1425px) {
 	.subtext {
 		line-height: normal;
-		max-width: 70%;
 	}
 }
-@media only screen and (max-width: 1150px) {
-	.imagegrid {
-		display: none;
+@media only screen and (max-width: 1225px) {
+	main {
+		margin: 30px;
+	}
+	@media only screen and (max-width: 1140px) {
+		.imagegrid {
+			display: none;
+		}
+		.subtext {
+			max-width: 60%;
+		}
+	}
+	@media only screen and (max-width: 540px) {
+		.subtext {
+			max-width: 88%;
+		}
+		.aiheader {
+			font-size: 40px;
+		}
 	}
 }

@@ -43,7 +43,7 @@ main {
 	margin-right: auto;
 	display: block;
 }
-@media only screen and (max-width: 1396px) {
+@media only screen and (max-width: 796px) {
 	main {
 		margin: 15px;
 	}
@@ -52,13 +52,10 @@ main {
 	.subtext {
 		line-height: normal;
 	}
-	.subtext {
-		line-height: normal;
-	}
 }
 @media only screen and (max-width: 1225px) {
 	main {
-		margin: 15px;
+		margin: 30px;
 	}
 	@media only screen and (max-width: 1140px) {
 		.imagegrid {
@@ -66,6 +63,11 @@ main {
 		}
 		.subtext {
 			max-width: 60%;
+		}
+	}
+	@media only screen and (max-width: 540px) {
+		.subtext {
+			max-width: 88%;
 		}
 	}
 }
