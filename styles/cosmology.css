@@ -25,7 +25,7 @@ main {
 	font-size: 20px;
 	line-height: 2;
 	color: #13152b;
-	max-width: 80%;
+	max-width: 70%;
 }
 .textgrid {
 	grid-area: col1;
@@ -66,11 +66,6 @@ main {
 		}
 		.subtext {
 			max-width: 60%;
-		}
-	}
-	@media only screen and (max-width: 840px) {
-		.subtext {
-			max-width: 80%;
 		}
 	}
 }

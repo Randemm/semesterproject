@@ -41,6 +41,7 @@ h5 {
 	font-family: "OpenSansReg", sans-serif;
 	font-size: 20px;
 	color: #000;
+	max-width: 80%;
 }
 .pricelist ul {
 	padding: 0px;
@@ -101,8 +102,5 @@ h5 {
 	}
 	main {
 		display: flex;
-	}
-	.subtext {
-		max-width: 70%;
 	}
 }
