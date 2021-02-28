@@ -176,6 +176,7 @@ footer {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 0px 3%;
 	padding: 1% 12% 0% 12%;
+	margin-top: 30px;
 }
 .footerpart1 {
 	grid-area: location;
