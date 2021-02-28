@@ -1,0 +1,147 @@
+.welcome {
+	position: relative;
+	background-image: url("/images/mammothcomp.webp");
+	background-size: cover;
+	height: 730px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.headline {
+	background-color: #2b98f0;
+	border-radius: 3px;
+	position: absolute;
+	width: 100%;
+	margin-top: 550px;
+	padding: 0px;
+	text-align: center;
+}
+.board {
+	display: grid;
+	grid-template-areas: "exp life";
+	grid-template-columns: 1fr 1fr;
+	margin: 1% 12% 2% 12%;
+	grid-gap: 100px;
+}
+.boardhead {
+	font-family: "Audiowide", sans-serif;
+	font-size: 30px;
+	color: #13152b;
+	margin: 20px;
+	font-weight: 200;
+	text-align: center;
+}
+.breakline {
+	border-width: 0px 0px 4px 0px;
+	border-style: solid;
+	width: 50%;
+	margin: 0px auto;
+	display: flex;
+	color: #2b98f0;
+}
+.subtext {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 17px;
+	color: #13152b;
+	text-align: center;
+	max-width: 80%;
+	margin: 15px auto;
+}
+.audiohead {
+	font-family: "Audiowide", sans-serif;
+	font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 30px;
+}
+.exp {
+	grid-area: exp;
+}
+.life {
+	grid-area: life;
+}
+.facilitygrid {
+	display: grid;
+	grid-template-areas: "access consume shop";
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 1% 12% 2% 12%;
+	grid-gap: 40px;
+}
+.access {
+	grid-area: access;
+	box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.45);
+	padding: 20px;
+	color: #000;
+	border-radius: 20px;
+}
+.consume {
+	grid-area: consume;
+	box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.45);
+	padding: 20px;
+	color: #000;
+	border-radius: 20px;
+}
+.shop {
+	grid-area: shop;
+	box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.45);
+	padding: 20px;
+	color: #000;
+	border-radius: 20px;
+}
+.facilitygrid span {
+	display: block;
+	text-align: center;
+	color: #2b98f0;
+	font-size: 100px;
+	margin: 30px 0px;
+}
+.secondhead {
+	display: block;
+	font-family: "OpenSansBold", sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	margin: 20px 0px;
+	text-align: center;
+	white-space: nowrap;
+}
+.secondp {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+@media only screen and (max-width: 1145px) {
+	.facilitygrid {
+		grid-template-areas:
+			"access"
+			"consume"
+			"shop";
+		grid-template-columns: 1fr;
+		margin: 100px;
+	}
+	.welcome {
+		background-position: center;
+		height: 450px;
+	}
+	.headline {
+		margin-top: 300px;
+	}
+	.audiohead {
+		font-size: 25px;
+		margin: 10px 5px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.facilitygrid {
+		margin: 1%;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.board {
+		grid-template-areas:
+			"exp"
+			"life";
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+}

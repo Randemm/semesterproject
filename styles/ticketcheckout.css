@@ -1,0 +1,117 @@
+.paywrap {
+	border-radius: 50px;
+	border-color: gray;
+	display: grid;
+	grid-template-areas: "1 2";
+	grid-template-columns: 1fr 1fr;
+	box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.45);
+	background-image: url("/images/dinobackground.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+main {
+	margin: 50px 250px;
+}
+.subtext {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 20px;
+	margin: 15px 0px;
+	color: #000;
+}
+.totalprice p {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 20px;
+	margin: 100px 0px;
+	color: #000;
+}
+.p2 {
+	font-family: "OpenSansLightBold", sans-serif;
+	font-size: 15px;
+	margin: 10px 0px;
+	color: #000;
+}
+h4 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: "OpenSansBold", sans-serif;
+	margin: 30px 0px 15px 0px;
+	color: #000;
+}
+.ticketinfo {
+	grid-area: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 0px 30px 175px;
+}
+.cardinfo {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+.payinput {
+	width: 50%;
+	background-color: #f2f2f2;
+	border-width: 0px 0px 1px 0px;
+	opacity: 0.7;
+	margin: 10px 0px;
+}
+.pay {
+	border-radius: 50px;
+	border-style: none;
+	background-color: #2b98f0;
+	color: white;
+	text-align: center;
+	width: 50%;
+	padding: 5px;
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 20px;
+	margin: 15px 0px;
+	cursor: pointer;
+	-webkit-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+.pay:hover {
+	background-color: #005694;
+}
+.cardinfo a {
+	text-decoration: none;
+}
+.halfinput {
+	width: 25%;
+	background-color: #f2f2f2;
+	border-width: 0px 0px 1px 0px;
+	opacity: 0.7;
+}
+@media only screen and (max-width: 1325px) {
+	main {
+		margin: 15px;
+	}
+}
+@media only screen and (max-width: 775px) {
+	.paywrap {
+		grid-template-areas:
+			"1"
+			"2";
+		grid-template-columns: 1fr;
+		background-position: right;
+	}
+	.cardinfo {
+		margin: auto;
+		padding: 0px;
+		width: 80%;
+	}
+	.ticketinfo {
+		margin: auto;
+		padding: 0px;
+		width: 80%;
+	}
+	.totalprice p {
+		margin: 50px 0px;
+	}
+}
+@media only screen and (max-width: 560px) {
+	.paywrap {
+		background-image: none;
+	}
+}

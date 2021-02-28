@@ -1,0 +1,68 @@
+main {
+	margin: 1% 12% 2% 12%;
+	display: grid;
+	grid-template-areas:
+		"con imag"
+		"hour imag";
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+}
+.total {
+	font-family: "OpenSansBold", sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-left: 140px;
+}
+h4 {
+	color: #13152b;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: "OpenSansBold", sans-serif;
+	margin: 30px 0px 0px 0px;
+}
+h5 {
+	font-family: "OpenSansBold", sans-serif;
+	font-size: 35px;
+	margin: 30px 0px 0px 0px;
+	color: #13152b;
+}
+.breakliner {
+	border-width: 0px 0px 4px 0px;
+	border-style: solid;
+	width: 90%;
+	display: flex;
+	color: #2b98f0;
+}
+.content {
+	grid-area: con;
+}
+.hours {
+	grid-area: hour;
+}
+.information {
+	position: relative;
+}
+.subtext {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 20px;
+	color: #000;
+}
+.image {
+	text-align: center;
+	grid-area: imag;
+}
+.image img {
+	margin: 30px auto;
+	border-radius: 300px;
+	width: 85%;
+	height: auto;
+}
+@media only screen and (max-width: 1145px) {
+	.image {
+		display: none;
+	}
+	main {
+		grid-template-columns: 1fr;
+		grid-gap: 0px;
+	}
+}

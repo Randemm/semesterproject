@@ -1,0 +1,115 @@
+main {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0px 100px;
+}
+h4 {
+	margin-top: 15px;
+}
+.headline {
+	font-family: "Audiowide", sans-serif;
+	font-size: 40px;
+	color: #13152b;
+	margin: 15px;
+	display: block;
+	font-weight: bold;
+}
+.contain {
+	display: grid;
+	grid-template-columns: 1fr 0.7fr;
+	grid-template-areas: "1 2";
+	height: 80vh;
+	margin-bottom: 10vh;
+}
+.contain2 {
+	display: grid;
+	grid-template-columns: 0.7fr 1fr;
+	grid-template-areas: "2 1";
+	height: 80vh;
+	margin-bottom: 10vh;
+}
+.box {
+	width: 100%;
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+	padding: 0px 30px 30px 30px;
+}
+.sideimage {
+	background-image: url("/images/andrew-ruiz-348421.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 12%;
+}
+.sideimage2 {
+	background-image: url("/images/scientific-2040795_1280.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 40px;
+}
+.sideimage3 {
+	background-image: url("/images/scott-webb-102825.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 12%;
+}
+.boxhead {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 30px;
+	color: #000;
+	font-weight: normal;
+	display: inline;
+	max-width: 60%;
+}
+.subtext {
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 25px;
+	color: #000;
+	max-width: 60%;
+	display: inline-block;
+	margin-top: 50px;
+}
+@media only screen and (max-width: 1400px) {
+	.box {
+		width: auto;
+	}
+	.sideimage {
+		display: none;
+	}
+	.sideimage2 {
+		display: none;
+	}
+	.sideimage3 {
+		display: none;
+	}
+	.contain {
+		grid-template-columns: 1fr;
+		grid-template-areas: "1";
+		height: auto;
+		margin-bottom: 0px;
+	}
+	.contain2 {
+		grid-template-columns: 1fr;
+		grid-template-areas: "1";
+		height: auto;
+	}
+	.subtext {
+		max-width: 100%;
+		width: 100%;
+		margin: 15px 0px;
+	}
+}
+@media only screen and (max-width: 828px) {
+	main {
+		margin: 5px;
+	}
+	.box {
+		padding: 0px;
+	}
+	.breakline {
+		min-width: 280px;
+	}
+}
