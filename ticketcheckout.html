@@ -21,7 +21,11 @@
 		<!-- HEADER START -->
 		<header>
 			<div id="logo">
-				<a href="index.html">
+				<a
+					alt="Community Science Museum logo."
+					href="index.html"
+					aria-label="Community Science Museum logo."
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="150"
@@ -171,14 +175,23 @@
 					</div>
 				</div>
 				<div class="cardinfo">
-					<p class="p2">E-mail</p>
-					<input class="payinput" type="email" name="email" id="" />
-					<p class="p2">Card details</p>
+					<label for="payinput0"><p class="p2">E-mail</p></label>
+					<input
+						class="payinput"
+						type="email"
+						name="email"
+						placeholder="E-mail adress"
+						id="payinput0"
+					/>
+					<label for="payinput1">
+						<p class="p2">Card details</p>
+					</label>
 					<input
 						class="payinput"
 						type="cc-numb"
 						name="cardnumber"
 						placeholder="1234-1234-1234-1234"
+						id="payinput1"
 					/>
 					<div class="rowinputs">
 						<input
@@ -186,14 +199,36 @@
 							type="ExpirationDate"
 							name="ExpirationDate"
 							placeholder="MM | YY"
+							id="payinput2"
 						/>
-						<input class="halfinput" type="text" placeholder="CVC" />
+						<input
+							class="halfinput"
+							type="text"
+							placeholder="CVC"
+							id="payinput3"
+						/>
 					</div>
-					<p class="p2">Name of cardholder</p>
-					<input type="Name" class="payinput" />
-					<p class="p2">Country/Region</p>
-					<input type="Country" class="payinput" placeholder="United states" />
-					<input type="zipcode" class="payinput" placeholder="Zip code" />
+					<label for="payinput4"><p class="p2">Name of cardholder</p></label>
+					<input
+						type="Name"
+						class="payinput"
+						placeholder="Full name"
+						id="payinput4"
+					/>
+					<label for="payinput5"><p class="p2">Country/Region</p></label>
+					<input
+						type="Country"
+						class="payinput"
+						placeholder="United states"
+						id="payinput5"
+					/>
+					<label for="payinput6"><p class="p2">Zip code</p></label>
+					<input
+						type="zipcode"
+						class="payinput"
+						placeholder="Zip code"
+						id="payinput6"
+					/>
 					<a href="tickets.html"><div class="pay">PAY 26,00 £</div></a>
 				</div>
 			</div>
@@ -201,19 +236,19 @@
 		<!-- FooTer -->
 		<footer>
 			<div class="footerpart1">
-				<h6 class="footerhead">Location</h6>
+				<h5 class="footerhead">Location</h5>
 				<p class="footerp">Kjelsåsveien 143, 0491 Oslo</p>
 			</div>
 			<div class="footerpart2">
-				<h7 class="footerhead">Opening times</h7>
+				<h6 class="footerhead">Opening times</h6>
 				<p class="footerp">The museum is temporarily closed</p>
 			</div>
 			<div class="footerpart3">
-				<h8 class="footerhead">Stay up to date</h8>
+				<h7 class="footerhead">Stay up to date</h7>
 				<a href="#">Newsletter sign up</a>
 			</div>
 			<div class="footerpart4">
-				<h9 class="footerhead">Quicklinks</h9>
+				<h8 class="footerhead">Quicklinks</h8>
 				<ul>
 					<li><a href="getinvolved.html">Jobs</a></li>
 					<li><a href="getinvolved.html">Volunteering</a></li>

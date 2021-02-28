@@ -73,7 +73,7 @@ h1.banner {
 }
 .current {
 	background-color: #2b98f0;
-	color: #fff !important;
+	color: #000 !important;
 }
 .hamburger {
 	margin: auto;
