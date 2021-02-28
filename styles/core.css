@@ -213,15 +213,24 @@ footer {
 .footerhead {
 	font-family: "OpenSansLightBold", sans-serif;
 	font-size: 20px;
-	margin: 5px 0px;
+	margin: 0px;
 	text-transform: uppercase;
 	color: white;
+	font-weight: normal;
 }
 .footerp {
 	font-family: "OpenSansReg", sans-serif;
 	font-size: 14px;
 	margin: 5px 0px;
 	color: #ffc800;
+}
+.footerpart3 a {
+	color: #ffc800;
+	font-family: "OpenSansReg", sans-serif;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0px;
 }
 .footerpart4 ul {
 	list-style: none;
@@ -235,6 +244,7 @@ footer {
 	color: #ffc800;
 	font-family: "OpenSansReg", sans-serif;
 	font-size: 14px;
+	margin: 5px 0px;
 }
 .cp-text {
 	color: white;
