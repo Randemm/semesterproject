@@ -1,224 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="author" content="Herman Randem" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Travel through time at the Community Science Museum and learn how the species we have on Earth today have evolved."
-		/>
-		<script type="text/javascript" src="js/index.js"></script>
-		<link href="styles/evolution.css" rel="stylesheet" />
-		<link href="styles/core.css" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		/>
-		<title>Exhibition Spaces - Evolution - Community Science Museum</title>
-	</head>
-	<body>
-		<!-- HEADER START -->
-		<header>
-			<div id="logo">
-				<a
-					alt="Community Science Museum logo."
-					href="index.html"
-					aria-label="Community Science Museum logo."
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="150"
-						height="136.08"
-						viewBox="0 0 150 136.08"
-					>
-						<g id="Logo" transform="translate(-53 -59.96)">
-							<rect
-								id="Rectangle_8"
-								data-name="Rectangle 8"
-								width="4"
-								height="8"
-								transform="translate(126 148)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_9"
-								data-name="Rectangle 9"
-								width="4"
-								height="8"
-								transform="translate(126 100)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_10"
-								data-name="Rectangle 10"
-								width="8"
-								height="4"
-								transform="translate(100 126)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_11"
-								data-name="Rectangle 11"
-								width="8"
-								height="4"
-								transform="translate(148 126)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_12"
-								data-name="Rectangle 12"
-								width="8.004"
-								height="4"
-								transform="translate(143.546 140.726) rotate(45)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_13"
-								data-name="Rectangle 13"
-								width="8.004"
-								height="4"
-								transform="translate(109.606 106.786) rotate(45)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_14"
-								data-name="Rectangle 14"
-								width="4"
-								height="8.004"
-								transform="translate(112.445 140.725) rotate(45)"
-								fill="#13152b"
-							/>
-							<rect
-								id="Rectangle_15"
-								data-name="Rectangle 15"
-								width="4"
-								height="8.004"
-								transform="translate(146.383 106.786) rotate(45)"
-								fill="#13152b"
-							/>
-							<path
-								id="Path_1"
-								data-name="Path 1"
-								d="M153.47,196.04c-7.24,0-15.424-2.77-23.984-8.229-13.369-8.525-26.188-22.671-36.1-39.831S77.643,112.647,76.944,96.806C76.225,80.5,81.038,68.51,90.5,63.048s22.249-3.635,36.012,5.141C139.878,76.714,152.7,90.86,162.6,108.02s15.748,35.333,16.447,51.174c.719,16.308-4.1,28.3-13.554,33.757A23.715,23.715,0,0,1,153.47,196.04ZM102.548,63.96A19.816,19.816,0,0,0,92.5,66.512c-8.1,4.678-12.208,15.374-11.558,30.117.671,15.21,6.323,32.737,15.916,49.351s21.943,30.271,34.78,38.458c12.443,7.935,23.757,9.727,31.861,5.05s12.208-15.374,11.558-30.117c-.671-15.21-6.323-32.737-15.916-49.351S137.2,79.749,124.358,71.562c-7.9-5.04-15.351-7.6-21.81-7.6Z"
-								fill="#2b98f0"
-							/>
-							<path
-								id="Path_2"
-								data-name="Path 2"
-								d="M102.53,196.04A23.715,23.715,0,0,1,90.5,192.952c-9.459-5.461-14.272-17.45-13.554-33.757.7-15.841,6.54-34.015,16.447-51.174s22.726-31.305,36.1-39.831c13.762-8.775,26.553-10.6,36.012-5.141s14.272,17.45,13.554,33.757c-.7,15.841-6.54,34.015-16.447,51.174s-22.726,31.305-36.1,39.831c-8.56,5.458-16.744,8.229-23.985,8.229ZM153.452,63.96c-6.459,0-13.906,2.562-21.811,7.6-12.837,8.187-25.188,21.844-34.78,38.458s-15.245,34.14-15.916,49.351c-.65,14.743,3.454,25.439,11.558,30.117s19.417,2.885,31.861-5.05c12.837-8.187,25.188-21.844,34.78-38.458s15.245-34.14,15.916-49.351c.65-14.743-3.454-25.439-11.558-30.117a19.82,19.82,0,0,0-10.05-2.552Z"
-								fill="#2b98f0"
-							/>
-							<path
-								id="Path_3"
-								data-name="Path 3"
-								d="M128,167.96c-19.814,0-38.474-4.029-52.541-11.344C60.976,149.085,53,138.922,53,128s7.976-21.085,22.459-28.616C89.526,92.069,108.186,88.04,128,88.04s38.474,4.029,52.541,11.344C195.024,106.915,203,117.078,203,128s-7.976,21.085-22.459,28.616C166.474,163.931,147.814,167.96,128,167.96Zm0-75.92c-39.149,0-71,16.131-71,35.96s31.851,35.96,71,35.96,71-16.131,71-35.96-31.851-35.96-71-35.96Z"
-								fill="#2b98f0"
-							/>
-							<circle
-								id="Ellipse_1"
-								data-name="Ellipse 1"
-								cx="15"
-								cy="15"
-								r="15"
-								transform="translate(113 113)"
-								fill="#FFC800"
-							/>
-							<path
-								id="Path_4"
-								data-name="Path 4"
-								d="M128,145a17,17,0,1,1,17-17A17.019,17.019,0,0,1,128,145Zm0-30a13,13,0,1,0,13,13A13.015,13.015,0,0,0,128,115Z"
-								fill="#13152b"
-							/>
-						</g>
-					</svg>
-				</a>
-			</div>
-			<a href="index.html">
-				<div class="bannerwrap">
-					<h1 class="banner">community</h1>
-					<h2 class="banner">science</h2>
-					<h3 class="banner">museum</h3>
-				</div>
-			</a>
-			<div class="navbar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="visit.html">Visit</a></li>
-					<li><a class="current" href="exhibitions.html">Exhibitions</a></li>
-					<li><a href="tickets.html">Tickets</a></li>
-					<li><a href="getinvolved.html">Get involved</a></li>
-				</ul>
-			</div>
-			<div class="hamburger">
-				<i onclick="check()" class="material-icons"> menu </i>
-			</div>
-			<div class="hamburgerout hidden" id="hambu">
-				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<a href="visit.html"><li>Visit</li></a>
-					<a href="exhibitions.html"><li>Exhibitions</li></a>
-					<a href="tickets.html"><li>Tickets</li></a>
-					<a href="getinvolved.html"><li>Get involved</li></a>
-				</ul>
-			</div>
-		</header>
-		<!-- HEADER END -->
-		<main>
-			<div class="aigrid">
-				<div class="textgrid">
-					<h4 class="aiheader">Evolution</h4>
-					<div class="breakline"></div>
-					<p class="subtext">
-						For centuries, philosophers and scientists have wrestled with the
-						question of our origins. Where do we come from and how did we get
-						here? Since Darwin proposed his theory of evolution we have had a
-						framework for exploring and understanding our place in this world.
-					</p>
-					<p class="subtext">
-						Discover the origins of life on this planet and how the species we
-						know today have evolved our time. You can also take some time to
-						meet a few of the creatures who didn’t survive, including our Woolly
-						Mammoth, the Dodos, and a number of dinosaurs too.
-					</p>
-				</div>
-				<div class="imagegrid">
-					<img
-						src="images/skeleton-414543_1920.webp"
-						alt="A picture of a human skeleton on the left side with an ape skeleton to the right, with two smaller ape skeletons to the right of it."
-					/>
-				</div>
-			</div>
-		</main>
-		<!-- FooTer -->
-		<footer>
-			<div class="footerpart1">
-				<h6 class="footerhead">Location</h6>
-				<p class="footerp">Kjelsåsveien 143, 0491 Oslo</p>
-			</div>
-			<div class="footerpart2">
-				<h7 class="footerhead">Opening times</h7>
-				<p class="footerp">The museum is temporarily closed</p>
-			</div>
-			<div class="footerpart3">
-				<h8 class="footerhead">Stay up to date</h8>
-				<a href="#">Newsletter sign up</a>
-			</div>
-			<div class="footerpart4">
-				<h9 class="footerhead">Quicklinks</h9>
-				<ul>
-					<li><a href="getinvolved.html">Jobs</a></li>
-					<li><a href="getinvolved.html">Volunteering</a></li>
-					<li><a href="#">Press office</a></li>
-					<li><a href="getinvolved.html">Support the museum</a></li>
-					<li><a href="#">Venue hire</a></li>
-				</ul>
-			</div>
-			<div class="footercopy">
-				<p class="cp-text">
-					© Copyright 2021 Community Science Museum. All rights reserved.
-				</p>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Herman Randem" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Travel through time at the Community Science Museum and learn how the species we have on Earth today have evolved."
+    />
+    <!-- Hotjar Tracking Code for https://priceless-kepler-47f0bd.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2417031, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <link href="styles/evolution.css" rel="stylesheet" />
+    <link href="styles/core.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Exhibition Spaces - Evolution - Community Science Museum</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div id="logo">
+        <a
+          alt="Community Science Museum logo."
+          href="index.html"
+          aria-label="Community Science Museum logo."
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="136.08"
+            viewBox="0 0 150 136.08"
+          >
+            <g id="Logo" transform="translate(-53 -59.96)">
+              <rect
+                id="Rectangle_8"
+                data-name="Rectangle 8"
+                width="4"
+                height="8"
+                transform="translate(126 148)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_9"
+                data-name="Rectangle 9"
+                width="4"
+                height="8"
+                transform="translate(126 100)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_10"
+                data-name="Rectangle 10"
+                width="8"
+                height="4"
+                transform="translate(100 126)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_11"
+                data-name="Rectangle 11"
+                width="8"
+                height="4"
+                transform="translate(148 126)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_12"
+                data-name="Rectangle 12"
+                width="8.004"
+                height="4"
+                transform="translate(143.546 140.726) rotate(45)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_13"
+                data-name="Rectangle 13"
+                width="8.004"
+                height="4"
+                transform="translate(109.606 106.786) rotate(45)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_14"
+                data-name="Rectangle 14"
+                width="4"
+                height="8.004"
+                transform="translate(112.445 140.725) rotate(45)"
+                fill="#13152b"
+              />
+              <rect
+                id="Rectangle_15"
+                data-name="Rectangle 15"
+                width="4"
+                height="8.004"
+                transform="translate(146.383 106.786) rotate(45)"
+                fill="#13152b"
+              />
+              <path
+                id="Path_1"
+                data-name="Path 1"
+                d="M153.47,196.04c-7.24,0-15.424-2.77-23.984-8.229-13.369-8.525-26.188-22.671-36.1-39.831S77.643,112.647,76.944,96.806C76.225,80.5,81.038,68.51,90.5,63.048s22.249-3.635,36.012,5.141C139.878,76.714,152.7,90.86,162.6,108.02s15.748,35.333,16.447,51.174c.719,16.308-4.1,28.3-13.554,33.757A23.715,23.715,0,0,1,153.47,196.04ZM102.548,63.96A19.816,19.816,0,0,0,92.5,66.512c-8.1,4.678-12.208,15.374-11.558,30.117.671,15.21,6.323,32.737,15.916,49.351s21.943,30.271,34.78,38.458c12.443,7.935,23.757,9.727,31.861,5.05s12.208-15.374,11.558-30.117c-.671-15.21-6.323-32.737-15.916-49.351S137.2,79.749,124.358,71.562c-7.9-5.04-15.351-7.6-21.81-7.6Z"
+                fill="#2b98f0"
+              />
+              <path
+                id="Path_2"
+                data-name="Path 2"
+                d="M102.53,196.04A23.715,23.715,0,0,1,90.5,192.952c-9.459-5.461-14.272-17.45-13.554-33.757.7-15.841,6.54-34.015,16.447-51.174s22.726-31.305,36.1-39.831c13.762-8.775,26.553-10.6,36.012-5.141s14.272,17.45,13.554,33.757c-.7,15.841-6.54,34.015-16.447,51.174s-22.726,31.305-36.1,39.831c-8.56,5.458-16.744,8.229-23.985,8.229ZM153.452,63.96c-6.459,0-13.906,2.562-21.811,7.6-12.837,8.187-25.188,21.844-34.78,38.458s-15.245,34.14-15.916,49.351c-.65,14.743,3.454,25.439,11.558,30.117s19.417,2.885,31.861-5.05c12.837-8.187,25.188-21.844,34.78-38.458s15.245-34.14,15.916-49.351c.65-14.743-3.454-25.439-11.558-30.117a19.82,19.82,0,0,0-10.05-2.552Z"
+                fill="#2b98f0"
+              />
+              <path
+                id="Path_3"
+                data-name="Path 3"
+                d="M128,167.96c-19.814,0-38.474-4.029-52.541-11.344C60.976,149.085,53,138.922,53,128s7.976-21.085,22.459-28.616C89.526,92.069,108.186,88.04,128,88.04s38.474,4.029,52.541,11.344C195.024,106.915,203,117.078,203,128s-7.976,21.085-22.459,28.616C166.474,163.931,147.814,167.96,128,167.96Zm0-75.92c-39.149,0-71,16.131-71,35.96s31.851,35.96,71,35.96,71-16.131,71-35.96-31.851-35.96-71-35.96Z"
+                fill="#2b98f0"
+              />
+              <circle
+                id="Ellipse_1"
+                data-name="Ellipse 1"
+                cx="15"
+                cy="15"
+                r="15"
+                transform="translate(113 113)"
+                fill="#FFC800"
+              />
+              <path
+                id="Path_4"
+                data-name="Path 4"
+                d="M128,145a17,17,0,1,1,17-17A17.019,17.019,0,0,1,128,145Zm0-30a13,13,0,1,0,13,13A13.015,13.015,0,0,0,128,115Z"
+                fill="#13152b"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <a href="index.html">
+        <div class="bannerwrap">
+          <h1 class="banner">community</h1>
+          <h2 class="banner">science</h2>
+          <h3 class="banner">museum</h3>
+        </div>
+      </a>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a class="current" href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="getinvolved.html">Get involved</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <i onclick="check()" class="material-icons"> menu </i>
+      </div>
+      <div class="hamburgerout hidden" id="hambu">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="visit.html"><li>Visit</li></a>
+          <a href="exhibitions.html"><li>Exhibitions</li></a>
+          <a href="tickets.html"><li>Tickets</li></a>
+          <a href="getinvolved.html"><li>Get involved</li></a>
+        </ul>
+      </div>
+    </header>
+    <!-- HEADER END -->
+    <main>
+      <div class="aigrid">
+        <div class="textgrid">
+          <h4 class="aiheader">Evolution</h4>
+          <div class="breakline"></div>
+          <p class="subtext">
+            For centuries, philosophers and scientists have wrestled with the
+            question of our origins. Where do we come from and how did we get
+            here? Since Darwin proposed his theory of evolution we have had a
+            framework for exploring and understanding our place in this world.
+          </p>
+          <p class="subtext">
+            Discover the origins of life on this planet and how the species we
+            know today have evolved our time. You can also take some time to
+            meet a few of the creatures who didn’t survive, including our Woolly
+            Mammoth, the Dodos, and a number of dinosaurs too.
+          </p>
+        </div>
+        <div class="imagegrid">
+          <img
+            src="images/skeleton-414543_1920.webp"
+            alt="A picture of a human skeleton on the left side with an ape skeleton to the right, with two smaller ape skeletons to the right of it."
+          />
+        </div>
+      </div>
+    </main>
+    <!-- FooTer -->
+    <footer>
+      <div class="footerpart1">
+        <h6 class="footerhead">Location</h6>
+        <p class="footerp">Kjelsåsveien 143, 0491 Oslo</p>
+      </div>
+      <div class="footerpart2">
+        <h7 class="footerhead">Opening times</h7>
+        <p class="footerp">The museum is temporarily closed</p>
+      </div>
+      <div class="footerpart3">
+        <h8 class="footerhead">Stay up to date</h8>
+        <a href="#">Newsletter sign up</a>
+      </div>
+      <div class="footerpart4">
+        <h9 class="footerhead">Quicklinks</h9>
+        <ul>
+          <li><a href="getinvolved.html">Jobs</a></li>
+          <li><a href="getinvolved.html">Volunteering</a></li>
+          <li><a href="#">Press office</a></li>
+          <li><a href="getinvolved.html">Support the museum</a></li>
+          <li><a href="#">Venue hire</a></li>
+        </ul>
+      </div>
+      <div class="footercopy">
+        <p class="cp-text">
+          © Copyright 2021 Community Science Museum. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
